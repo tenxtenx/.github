@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "config:js-app",
+    ":automergeTypes",
+    ":automergeMinor",
+    "schedule:nonOfficeHours"
+  ],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Auto-merge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "pin", "lockFileMaintenance"],
+      "automergeType": "branch",
+      "stabilityDays": 3
+    },
+    {
+      "groupName": "major",
+      "description": "Create PR for major updates",
+      "matchUpdateTypes": ["major"],
+      "labels": ["review required"]
+    },
+    {
+      "groupName": "unstable",
+      "description": "react-router v6 is not stable and some necessary features are removed",
+      "matchPackageNames": ["react-router-dom"],
+      "enabled": false
+    }
+  ]
+}

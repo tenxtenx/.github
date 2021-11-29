@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "config:js-app",
+    ":automergeTypes",
+    ":automergeMinor",
+    "schedule:nonOfficeHours"
+  ],
+  "ignoreTests": true,
+  "timezone": "Asia/Ho_Chi_Minh",
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Auto-merge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "pin", "lockFileMaintenance"],
+      "automergeType": "branch"
+    }
+  ]
+}
