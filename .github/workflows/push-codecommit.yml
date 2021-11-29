@@ -1,4 +1,4 @@
-name: Push code to CodeCommit (AWS)
+name: Synchronize to CodeCommit (AWS)
 
 on:
   workflow_call:
@@ -15,19 +15,13 @@ on:
         required: true
 
 jobs:
-  build:
+  push:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: "0"
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "lts/*"
-          cache: "yarn"
-      - run: yarn
       - name: Push to CodeCommit
         run: |
           git config --local user.name 'Khanh Hoang'
