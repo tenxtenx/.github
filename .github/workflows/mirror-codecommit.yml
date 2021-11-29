@@ -1,4 +1,4 @@
-name: Synchronize to CodeCommit (AWS)
+name: Synchronize to GitHub from CodeCommit (AWS)
 
 on:
   workflow_call:
@@ -27,4 +27,5 @@ jobs:
           git config --local user.name 'Khanh Hoang'
           git config --local user.email 'khanh@tenxtenx.com'
           git remote add codecommit https://${{ secrets.username }}:${{ secrets.password }}@git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/${{ secrets.repo }}
-          git push codecommit $GITHUB_REF_NAME:${{ inputs.branch }}
+          git fetch codecommit ${{ inputs.branch }}
+          git push origin refs/remotes/codecommit/${{ inputs.branch }}:$GITHUB_REF -f
