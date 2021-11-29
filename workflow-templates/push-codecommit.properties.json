@@ -1,0 +1,6 @@
+{
+  "name": "Push CodeCommit Workflow",
+  "description": "Push source code to CodeCommit on AWS",
+  "categories": ["Node.js", "JavaScript", "Yarn", "Berry"],
+  "filePatterns": ["package.json$"]
+}

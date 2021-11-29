@@ -1,0 +1,27 @@
+name: Push code to CodeCommit (AWS)
+
+on:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 'lts/*'
+        cache: 'yarn'
+    - run: yarn
+    - name: Release
+      run: |
+        git config --local user.name 'Khanh Hoang'
+        git config --local user.email 'khanh@tenxtenx.com'
+        git remote add codecommit https://${{ secrets.CODECOMMIT_USERNAME }}:${{ secrets.CODECOMMIT_PASSWORD }}@git-codecommit.${{ secrets.CODECOMMIT_REGION }}.amazonaws.com/v1/repos/${{ secrets.CODECOMMIT_REPO }}
+        git push codecommit master
