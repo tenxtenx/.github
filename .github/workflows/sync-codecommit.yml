@@ -16,7 +16,8 @@ on:
         required: true
 
 jobs:
-  push:
+  push-or-pull:
+    name: Push to CodeCommit or Pull (if failed)
     runs-on: ubuntu-latest
 
     steps:
