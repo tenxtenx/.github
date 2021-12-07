@@ -12,7 +12,8 @@
     {
       "description": "Auto-merge non-major updates",
       "matchUpdateTypes": ["minor", "patch", "pin", "lockFileMaintenance"],
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "stabilityDays": 3
     }
   ]
 }
