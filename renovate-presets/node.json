@@ -8,6 +8,7 @@
   "ignoreTests": true,
   "timezone": "Asia/Ho_Chi_Minh",
   "platformAutomerge": true,
+  "separateMinorPatch": true,
   "packageRules": [
     {
       "description": "Auto-merge non-major updates",
