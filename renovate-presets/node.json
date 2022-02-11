@@ -2,17 +2,17 @@
   "extends": [
     "config:js-app",
     ":automergeTypes",
-    ":automergeMinor",
+    ":skipStatusChecks",
+    ":separatePatchReleases",
     "schedule:nonOfficeHours"
   ],
-  "ignoreTests": true,
   "timezone": "Asia/Ho_Chi_Minh",
   "platformAutomerge": true,
-  "separateMinorPatch": true,
   "packageRules": [
     {
-      "description": "Auto-merge non-major updates",
+      "description": "Auto-merge non-major updates after 7 days",
       "matchUpdateTypes": ["minor", "patch", "pin", "lockFileMaintenance"],
+      "automerge": true,
       "automergeType": "branch",
       "stabilityDays": 7
     }
