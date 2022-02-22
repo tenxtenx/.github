@@ -1,0 +1,8 @@
+{
+  "extends": ["config:js-app", ":automergeTypes", "schedule:nonOfficeHours"],
+  "timezone": "Asia/Ho_Chi_Minh",
+  "platformAutomerge": true,
+  "encrypted": {
+    "npmToken": "wcFMA/xDdHCJBTolAQ//Y3raIkRBK4lyyc18pjCoIVX9PxblaQI9eiT2Zswm38HYYEdihgx++QvyvcK16rd0Qk43lwqYSDSoCIpkaASUhHv2ewEXlv58P5BueSWemGRdjcnDoz4GRl9u7ezt6R24hFxin5VJVYVKh0KW2nszRz/LWVpLKuuy1YMpnSBwEnoQ2yf5dDL8DnctVcpItzaNhm833izJO9kZxMhjB5TnzZEgua9AzIfollqHmur6qtOHHt+TO9Tz+akvuJJorWJJKl7rCMTTHRngbXq62CvsyXdSm9x8Bd6hQfcGowWRykZtBanSQYz7RlXUx91Nxu3CzG5UgFdKx7c6Lfx8L4o6ZPzzKAEKlSQXYCEOt8PTT4XeLcooSONDbsipdZ1Vdz8s6dEKMJwlSHvSUTznwNT35yZ3bXQriPBEejRnJI6L4s/7pGdtFHkWF1Dpqau0U32YkfiEjG4Osy4o/KvR6bcRiDuomsgbU5hkCB9TIKhOoct1bRnBVIkkyJedmKBFbpl80SJ9RbU3N0kYeiV51NQnGTpRzfRam2rVdPzT24W5HYhBWFoAFHNVm7D8unobOxLJtjCwaTFMmJs9ZRIvisaHM8Zn+SpM2vdqXD0rmpbyO6uTYUSstth25M2TGe84rdq2Z9XatiyRT5iaZe02BjYYM2vau4Cmjz6kAw5EsvjXawbSdwFFCyjMHg+lzWfrxk84oiGoli/ohT89/lw5t6CbV8/5Laxuqb2SDDGvXumYpK2rvPO020YTv1LH6y9Bx1PwSSKkTO6F8Y7LJDzYEzd0Fsi5FVBfuQv/2LJhii+ZM7bscbQOVvomzfyEloajqkJw+E0S1H3NXbhx"
+  }
+}
