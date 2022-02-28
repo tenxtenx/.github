@@ -1,5 +1,11 @@
 {
-  "extends": ["config:js-app", ":automergeTypes", "schedule:nonOfficeHours"],
+  "extends": [
+    "config:js-app",
+    ":automergeTypes",
+    "schedule:nonOfficeHours",
+    ":separatePatchReleases",
+    ":separateMultipleMajorReleases"
+  ],
   "timezone": "Asia/Ho_Chi_Minh",
   "platformAutomerge": true,
   "encrypted": {

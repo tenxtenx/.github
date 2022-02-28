@@ -1,8 +1,7 @@
 {
   "extends": [
     "github>tenxtenx/.github//renovate-presets/base",
-    ":skipStatusChecks",
-    ":separatePatchReleases"
+    ":skipStatusChecks"
   ],
   "packageRules": [
     {
