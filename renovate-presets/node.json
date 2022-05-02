@@ -5,8 +5,8 @@
   ],
   "packageRules": [
     {
-      "description": "Auto-merge non-major updates after 7 days",
-      "matchUpdateTypes": ["minor", "patch", "pin", "lockFileMaintenance"],
+      "description": "Auto-merge patch updates after 7 days",
+      "matchUpdateTypes": ["patch", "pin", "lockFileMaintenance"],
       "automerge": true,
       "automergeType": "branch",
       "stabilityDays": 7
