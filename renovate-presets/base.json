@@ -2,8 +2,10 @@
   "extends": [
     "config:js-app",
     ":automergeTypes",
-    "schedule:nonOfficeHours",
+    "npm:unpublishSafe",
+    "group:definitelyTyped",
     ":separatePatchReleases",
+    "schedule:nonOfficeHours",
     ":separateMultipleMajorReleases"
   ],
   "timezone": "Asia/Ho_Chi_Minh",
