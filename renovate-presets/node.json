@@ -1,15 +1,10 @@
 {
   "extends": [
     "github>tenxtenx/.github//renovate-presets/base",
-    ":skipStatusChecks"
-  ],
-  "packageRules": [
-    {
-      "description": "Auto-merge patch updates after 7 days",
-      "matchUpdateTypes": ["patch", "pin", "lockFileMaintenance"],
-      "automerge": true,
-      "automergeType": "branch",
-      "stabilityDays": 7
-    }
+    ":automergePr",
+    ":automergePatch",
+    ":automergeTypes",
+    "npm:unpublishSafe",
+    "group:definitelyTyped"
   ]
 }
