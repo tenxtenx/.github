@@ -2,7 +2,7 @@
   "extends": [
     "github>tenxtenx/.github//renovate-presets/base",
     ":automergePr",
-    ":automergePatch",
+    ":automergeMinor",
     ":automergeTypes",
     "npm:unpublishSafe",
     "group:definitelyTyped"
