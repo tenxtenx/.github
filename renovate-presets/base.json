@@ -6,7 +6,8 @@
     "group:definitelyTyped",
     ":separatePatchReleases",
     "schedule:nonOfficeHours",
-    ":separateMultipleMajorReleases"
+    ":separateMultipleMajorReleases",
+    ":automergeRequireAllStatusChecks"
   ],
   "timezone": "Asia/Ho_Chi_Minh",
   "platformAutomerge": true,
