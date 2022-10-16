@@ -6,7 +6,7 @@ on:
       branch:
         type: string
         required: false
-        default: "develop"
+        default: 'develop'
     secrets:
       username:
         required: true
@@ -18,8 +18,7 @@ on:
 jobs:
   push-or-pull:
     name: Push or Pull (if failed)
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
         with:
