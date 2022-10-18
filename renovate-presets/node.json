@@ -3,7 +3,6 @@
     "github>tenxtenx/.github//renovate-presets/base",
     ":automergePr",
     ":automergeMinor",
-    ":automergeTypes",
     "npm:unpublishSafe",
     "group:definitelyTyped"
   ]
