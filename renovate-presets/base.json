@@ -2,7 +2,6 @@
   "extends": [
     "config:js-app",
     ":automergeTypes",
-    ":semanticCommits",
     "npm:unpublishSafe",
     "group:definitelyTyped",
     ":separatePatchReleases",
