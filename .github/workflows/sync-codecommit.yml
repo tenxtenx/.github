@@ -29,8 +29,4 @@ jobs:
           git config --local user.email 'khanh@tenxtenx.com'
           git remote add codecommit https://${{ secrets.username }}:${{ secrets.password }}@git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/${{ secrets.repo }}
           git push codecommit $GITHUB_REF_NAME:${{ inputs.branch }}
-      - name: Pull from CodeCommit (if failed)
-        if: ${{ failure() }}
-        run: |
-          git fetch codecommit ${{ inputs.branch }}
-          git push origin refs/remotes/codecommit/${{ inputs.branch }}:$GITHUB_REF -f
+
